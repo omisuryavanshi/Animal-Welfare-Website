@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+</head>
+<body>
+
+<h1>Admin Dashboard 🧠</h1>
+
+<button onclick="loadAllReports()">View All Reports</button>
+<button onclick="showAdoptionForm()">Add Adoption Animal</button>
+<button onclick="logout()">Logout</button>
+
+<hr>
+
+<h2>Reports</h2>
+<ul id="allReports"></ul>
+
+<hr>
+
+<div id="adoptionForm" style="display:none;">
+    <h3>Add Animal for Adoption 🐾</h3>
+    <input type="text" id="animalType" placeholder="Animal Type (Dog, Cat...)"><br><br>
+    <textarea id="animalDesc" placeholder="Description"></textarea><br><br>
+    <button onclick="addAdoption()">Add</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

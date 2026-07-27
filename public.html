@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Public Dashboard</title>
+</head>
+<body>
+
+<h1>Public Dashboard 🐾</h1>
+
+<button onclick="showSection('report')">Report Animal</button>
+<button onclick="showSection('track')">Track Reports</button>
+<button onclick="showSection('donate')">Donations</button>
+<button onclick="showSection('adopt')">Adoptions</button>
+<button onclick="showSection('info')">Animal Info</button>
+
+<hr>
+
+<!-- 📸 REPORT -->
+<div id="report" style="display:none;">
+    <h3>Report Animal</h3>
+    <input type="file" id="image"><br><br>
+    <textarea id="description" placeholder="Describe problem"></textarea><br><br>
+    <button onclick="submitReport()">Submit</button>
+</div>
+
+<!-- 📊 TRACK -->
+<div id="track" style="display:none;">
+    <h3>Your Reports</h3>
+    <button onclick="getReports()">Load Reports</button>
+    <ul id="reportList"></ul>
+</div>
+
+<!-- 💰 DONATION -->
+<div id="donate" style="display:none;">
+    <h3>Donations</h3>
+    <p>Coming soon... 💰</p>
+</div>
+
+<!-- 🐶 ADOPTION -->
+<div id="adopt" style="display:none;">
+    <h3>Adoption</h3>
+    <button onclick="getAdoptions()">View Animals</button>
+    <ul id="adoptionList"></ul>
+</div>
+
+<!-- 📘 INFO -->
+<div id="info" style="display:none;">
+    <h3>Animal Safety</h3>
+    <ul>
+        <li>Do: Feed animals safely</li>
+        <li>Do: Maintain distance</li>
+        <li>Don't: Harm animals</li>
+        <li>Don't: Panic near injured animals</li>
+    </ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="center">
+
+<div class="card">
+    <h2>Register 🐱</h2>
+
+    <select id="regRole">
+        <option value="">--Select Role--</option>
+        <option value="public">Public</option>
+        <option value="volunteer">Volunteer</option>
+    </select>
+
+    <input type="text" id="regUsername" placeholder="Username">
+    <input type="password" id="regPassword" placeholder="Password">
+
+    <button onclick="register()">Register</button>
+
+    <p onclick="goTo('home.html')" class="link">⬅ Back</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
